@@ -1,3 +1,5 @@
+"use strict";
+
 const chars = require('./base64');
 const maxIndex = chars.length - 1;
 const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
