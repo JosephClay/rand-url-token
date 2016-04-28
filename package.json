@@ -1,0 +1,24 @@
+{
+  "name": "rand-url-token",
+  "version": "0.0.1",
+  "description": "generates a base 64 url-safe token",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --use_strict --harmony_destructuring --harmony_default_parameters test | tap-dot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosephClay/rand-url-token.git"
+  },
+  "author": "JosephClay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JosephClay/rand-url-token/issues"
+  },
+  "homepage": "https://github.com/JosephClay/rand-url-token#readme",
+  "devDependencies": {
+    "lodash": "^4.11.1",
+    "tap-dot": "^1.0.5",
+    "tape": "^4.5.1"
+  }
+}
