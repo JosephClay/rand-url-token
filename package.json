@@ -1,6 +1,6 @@
 {
   "name": "rand-url-token",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "generates a base 64 url-safe token",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JosephClay/rand-url-token.git"
+    "url": "git+https://github.com/pivotall/rand-url-token.git"
   },
   "author": "JosephClay",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JosephClay/rand-url-token/issues"
+    "url": "https://github.com/pivotall/rand-url-token/issues"
   },
-  "homepage": "https://github.com/JosephClay/rand-url-token#readme",
+  "homepage": "https://github.com/pivotall/rand-url-token#readme",
   "devDependencies": {
     "lodash": "^4.11.1",
     "tap-dot": "^1.0.5",
