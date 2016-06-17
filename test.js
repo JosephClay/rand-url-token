@@ -11,3 +11,26 @@ test('token', assert => {
 
     assert.end();
 });
+
+test('valid', assert => {
+	// primitives that are not strings should all be invalid
+	assert.notOk(token.valid(null), 'null');
+	assert.notOk(token.valid(undefined), 'undefined');
+	assert.notOk(token.valid(0), 'number');
+	assert.notOk(token.valid(NaN), 'NaN');
+	assert.notOk(token.valid(true), 'Boolean');
+	assert.notOk(token.valid([]), 'Array');
+	assert.notOk(token.valid({}), 'Object');
+	assert.notOk(token.valid(() => {}), 'function');
+
+	assert.notOk(token.valid(''), 'empty string should be invalid');
+	assert.notOk(token.valid('     '), 'padded empty string should be invalid');
+	assert.notOk(token.valid(' \n  \n  '), 'empty string with new lines should be invalid');
+
+	assert.notOk(token.valid(';zz;'), 'token with invalid characters should fail');
+	assert.notOk(token.valid('   ;zz;   '), 'passed token with invalid characters should fail');
+
+	assert.ok(token.valid('aZ-_09'), 'valid token should be valid');
+
+	assert.end();
+});
