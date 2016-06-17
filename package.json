@@ -1,6 +1,6 @@
 {
   "name": "rand-url-token",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "generates a base 64 url-safe token",
   "main": "index.js",
   "scripts": {
