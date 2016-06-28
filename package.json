@@ -1,6 +1,6 @@
 {
   "name": "rand-url-token",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "generates a base 64 url-safe token",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,11 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pivotall/rand-url-token/issues"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
   },
   "homepage": "https://github.com/pivotall/rand-url-token#readme",
   "devDependencies": {
